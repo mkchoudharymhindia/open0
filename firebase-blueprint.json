@@ -1,0 +1,58 @@
+{
+  "entities": {
+    "Order": {
+      "title": "Order",
+      "description": "Complete e-commerce customer order details including customer, items, and verification status",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Firestore document ID" },
+        "orderId": { "type": "string", "description": "Unique human-readable order ID e.g. LDW-17281920" },
+        "createdAt": { "type": "string", "description": "ISO date-time string when order was placed" },
+        "customerName": { "type": "string", "description": "Full name of the customer" },
+        "phoneNumber": { "type": "string", "description": "Customer mobile phone number" },
+        "email": { "type": "string", "description": "Customer email address" },
+        "deliveryAddress": { "type": "string", "description": "Complete street delivery address" },
+        "city": { "type": "string", "description": "Delivery city" },
+        "state": { "type": "string", "description": "Delivery state" },
+        "pincode": { "type": "string", "description": "6-digit postal PIN code" },
+        "items": { "type": "array", "description": "Ordered products list with name, image, price, quantity, and color" },
+        "subtotal": { "type": "number", "description": "Subtotal amount before delivery and discount" },
+        "discount": { "type": "number", "description": "Discount applied in INR" },
+        "deliveryCharges": { "type": "number", "description": "Delivery charges in INR" },
+        "totalAmount": { "type": "number", "description": "Final order total amount in INR" },
+        "paymentMethod": { "type": "string", "description": "Method of payment e.g. UPI / QR Scan" },
+        "utrNumber": { "type": "string", "description": "12-digit UPI UTR or bank transaction reference number" },
+        "paymentStatus": {
+          "type": "string",
+          "enum": ["Payment Details Submitted", "Payment Verified", "Payment Failed", "Refund Initiated", "Refunded"],
+          "description": "Payment verification status"
+        },
+        "orderStatus": {
+          "type": "string",
+          "enum": ["Processing", "Shipped", "Out for Delivery", "Delivered", "Cancelled"],
+          "description": "Current order fulfillment status"
+        },
+        "customerNotes": { "type": "string", "description": "Optional notes from customer" }
+      },
+      "required": [
+        "orderId",
+        "createdAt",
+        "customerName",
+        "phoneNumber",
+        "deliveryAddress",
+        "city",
+        "state",
+        "pincode",
+        "totalAmount",
+        "paymentStatus",
+        "orderStatus"
+      ]
+    }
+  },
+  "firestore": {
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Collection storing all customer orders"
+    }
+  }
+}

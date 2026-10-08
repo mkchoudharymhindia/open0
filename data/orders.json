@@ -1,0 +1,85 @@
+[
+  {
+    "id": "LDW-ORD-20261007-1526",
+    "createdAt": "2026-10-07T03:15:11.925Z",
+    "customer": {
+      "name": "Anu Choudhary",
+      "phone": "9876501234",
+      "email": "anu@example.com",
+      "address": "Flat 101, Palm Avenue",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "pincode": "302001",
+      "termsAccepted": true,
+      "notes": "Fragile item"
+    },
+    "items": [
+      {
+        "product": {
+          "id": "prod-mug-home-household-2",
+          "name": "Mug",
+          "description": "",
+          "category": "Home & Household",
+          "originalPrice": 49,
+          "finalPrice": 49,
+          "rating": 4.9,
+          "reviewCount": 100,
+          "images": [
+            "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80"
+          ]
+        },
+        "quantity": 2
+      }
+    ],
+    "subtotal": 98,
+    "discount": 0,
+    "deliveryCharges": 0,
+    "totalAmount": 98,
+    "paymentMethod": "UPI / QR Code Scan",
+    "utrNumber": "987654321012",
+    "paymentStatus": "Payment Details Submitted",
+    "orderStatus": "Pending Verification",
+    "customerNotes": "Fragile item"
+  },
+  {
+    "id": "LDW-ORD-849201",
+    "createdAt": "2026-10-06T23:15:00.512Z",
+    "customer": {
+      "name": "Rahul Sharma",
+      "phone": "9876543210",
+      "email": "rahul.sharma@example.com",
+      "address": "Flat 402, Sunshine Heights, Sector 18",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "pincode": "201301",
+      "instagramId": "@rahul_s",
+      "termsAccepted": true,
+      "notes": "Please call before delivery"
+    },
+    "items": [
+      {
+        "product": {
+          "id": "prod-iphone-15-pro-mobile-accessories",
+          "name": "iPhone 15 Pro",
+          "finalPrice": 1100,
+          "originalPrice": 134900,
+          "category": "Mobile Accessories",
+          "images": [
+            "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&auto=format&fit=crop&q=80"
+          ]
+        },
+        "quantity": 1,
+        "selectedColor": "Natural Titanium"
+      }
+    ],
+    "subtotal": 1100,
+    "discount": 0,
+    "deliveryCharges": 0,
+    "totalAmount": 1100,
+    "paymentMethod": "UPI / QR Code Scan",
+    "utrNumber": "328104829105",
+    "paymentStatus": "Payment Details Submitted",
+    "orderStatus": "Pending Verification",
+    "customerNotes": "Please ring doorbell or call."
+  }
+]

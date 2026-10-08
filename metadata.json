@@ -1,0 +1,6 @@
+{
+  "name": "LuckyDrawWin — All Items ₹9 to ₹99 Only",
+  "description": "LuckyDrawWin is a modern Indian e-commerce store offering verified physical lifestyle, gadget, and daily products at ₹9 to ₹99 only with fast UPI payment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
